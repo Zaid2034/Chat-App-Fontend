@@ -31,7 +31,7 @@ export default function Chat(){
         // }
     },[selectedUserID])
     function connectTows(){
-        const ws = new WebSocket ('wss://chat-app-backend-fawn-psi.vercel.app/');
+        const ws = new WebSocket ('wss://chat-app-backend-ot16.onrender.com/');
         setWs (ws);
         console.log('in connection to ws')
         ws.addEventListener ('message', handleMessage)
